@@ -1,8 +1,8 @@
 # Tim
 
-**Nama Kelompok:** _(isi nama tim kalian)_
+**Nama Kelompok:** kelompok_tiga
 
-**Kelas:** _(misal: Machine Learning – Kelas A)_
+**Kelas:** Machine Learning_6PTI51A
 
 ## Anggota
 
