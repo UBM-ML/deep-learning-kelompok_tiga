@@ -17,7 +17,7 @@ Isi tabel ini setelah selesai semua eksperimen.
 | 2 | 2      | 128     | sigmoid    | adamax    | 0.01   | 128   | 30     | 0.0     | ~87%     | ~82s       |
 | 3 | 4      | 256     | elu        | sgd       | 0.01   | 32    | 10     | 0.3     | ~61%     | ~30s       |
 | 4 | 2      | 64      | tanh       | adam      | 0.001  | 128   | 10     | 0.3     | ~86%     | ~26s       |
-| 5 | 5      | 512     | selu       | rmsprop   | 1.0    | 512   | 50     | 50      | ~10%     | ~768       |
+| 5 | 5      | 128     | relu       | adam     | 0.001   | 32    | 20     | 0.2     | ~88%     | ~144s      |
 
 > **Eksperimen #0** = baseline (jangan ubah, ini patokan kalian).
 
