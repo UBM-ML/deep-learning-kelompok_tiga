@@ -182,14 +182,14 @@ Val accuracy   : 88.52%
 Setelah semua eksperimen, salin konfigurasi terbaik kalian ke sini:
 
 ```python
-HIDDEN_LAYERS     = ?
-NEURONS_PER_LAYER = ?
-ACTIVATION        = ?
-DROPOUT_RATE      = ?
-OPTIMIZER         = ?
-LEARNING_RATE     = ?
-BATCH_SIZE        = ?
-EPOCHS            = ?
+HIDDEN_LAYERS     = 5
+NEURONS_PER_LAYER = 128
+ACTIVATION        = relu
+DROPOUT_RATE      = 0.3
+OPTIMIZER         = adam
+LEARNING_RATE     = 0.001
+BATCH_SIZE        = 32
+EPOCHS            = 20
 ```
 
-**Test accuracy final: ___%**
+**Test accuracy final: 88%**
