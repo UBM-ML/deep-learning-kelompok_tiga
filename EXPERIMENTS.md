@@ -114,13 +114,16 @@ Coba: kurangi neuron, tambah dropout, atau kurangi epoch.
 
 ### Eksperimen #4
 
-**Apa yang diubah:**
+**Apa yang diubah:Jumlah Hidden ditingkatkan menjadi layer 4 dengan neuron 256 per layer, menggunakan aktivasi ELU dan dropout 0.3.
 
-**Hipotesis:**
+**Hipotesis: Penambahan hidden layer dan neuron diharapkan meningkatkan kemampuan model dalam memplajari pola data yang lebih kompleks sehingga akurasi meningkat
 
-**Hasil:**
+**Hasil:-Train accuracy:57.73%
+        -Validation accuracy:62.82%
+        -Test accuracy:61.89%
+        -Test loss:9.9008
 
-**Observasi:**
+**Observasi:Model menunjukkan performa validasi dan test yang cukup baik, namun train accuracy masih relatif rendah. Learnig rate 0.1 kemungkinan terlalu besar sehingga proses traainning kurang stabil dan menyebabkan loss tinggi .Model belum optimal dan masih dapat ditingkatkan melalui penyesuaian hyperparameter seperti learning rate yang lebih kecil atas penambhan epoch
 
 ---
 
