@@ -147,30 +147,29 @@ Model menunjukkan performa validasi dan test yang cukup baik, namun train accura
 
 **Apa yang diubah:**
 
-  Hidden layers     : 5
-  Neurons per layer : 512
-  Activation        : selu
-  Dropout rate      : 0.5
-  Optimizer         : rmsprop
-  Learning rate     : 1.0
-  Batch size        : 512
-  Epochs            : 50
+  Hidden layers     : 2
+  Neurons per layer : 128
+  Activation        : relu
+  Dropout rate      : 0.2
+  Optimizer         : adam
+  Learning rate     : 0.001
+  Batch size        : 32
+  Epochs            : 20
   
 **Hipotesis:**
 
-Penambahan kompleksitas arsitektur jaringan (jumlah layer dan neuron), penggunaan optimizer RMSprop, serta aktivasi SELU diperkirakan dapat meningkatkan kemampuan model dalam mengenali pola data sehingga akurasi model meningkat.
+Dengan menggunakan arsitektur jaringan yang lebih sederhana dan stabil, optimizer Adam, learning rate yang lebih kecil, serta aktivasi ReLU dan dropout moderat, model diharapkan dapat belajar lebih efektif sehingga akurasi klasifikasi meningkat dan performa generalisasi menjadi lebih baik.
 
 **Hasil:**
 
-TEST ACCURACY  : 10.00%
-   Test loss      : 541.2349
-   Train accuracy : 10.02%
-   Val accuracy   : 10.03%
-   
+TEST ACCURACY  : 87.98%
+Test loss      : 0.3457
+Train accuracy : 90.11%
+Val accuracy   : 88.52%
+
 **Observasi:**
 
-Akurasi train rendah — kemungkinan UNDERFITTING.
-Coba: tambah neuron/layer, naikkan learning rate, atau tambah epoch.
+✅ Train-val gap sehat. Lanjut eksperimen!
 
 ---
 
