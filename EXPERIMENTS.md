@@ -75,14 +75,28 @@ Model menunjukkan peningkatan akurasi dibandingkan baseline dengan proses traini
 
 
 ### Eksperimen #2
-
 **Apa yang diubah:**
+- Hidden Layer menjadi 2
+- Neurons per layer menjadi 128
+- Optimizer menjadi adamax
+- Batch Size menjadi 128
+- Epochs menjadi 30
 
 **Hipotesis:**
+- Train time lebih lama karena epoch lebih banyak.
+- Hasil menjadi lebih akurat karena hidden layer dan neurons per layer lebih banyak.
+- Komputasi lebih kompleks.
 
 **Hasil:**
+- Test accuracy: 87.44%
+- Train accuracy: 95.26%
+- Validation accuracy: 87.78%
+- Train time: 82.9 detik
+- Apakah overfit/underfit? kemungkinan OVERFITTING
 
 **Observasi:**
+Gap train vs val = 7.5% — kemungkinan OVERFITTING.
+Coba: kurangi neuron, tambah dropout, atau kurangi epoch.
 
 ---
 
