@@ -16,7 +16,7 @@ Isi tabel ini setelah selesai semua eksperimen.
 | 1 | 2      | 128     | tanh       | adam      | 0.01   | 512   | 10     | 0.5     | 91%      | ~45s       |
 | 2 | 2      | 128     | sigmoid    | adamax    | 0.01   | 128   | 30     | 0.0     | ~87%     | ~82s       |
 | 3 | 4      | 256     | elu        | sgd       | 0.01   | 32    | 10     | 0.3     | ~61%     | ~30s       |
-| 4 |        |         |            |           |        |       |        |         |          |            |
+| 4 | 2      | 64      | tanh       | adam      | 0.001  | 128   | 10     | 0.3     | ~86%     | ~26S       |
 | 5 |        |         |            |           |        |       |        |         |          |            |
 
 > **Eksperimen #0** = baseline (jangan ubah, ini patokan kalian).
@@ -103,12 +103,26 @@ Coba: kurangi neuron, tambah dropout, atau kurangi epoch.
 ### Eksperimen #3
 
 **Apa yang diubah:**
+- Mengganti optimizer dari SGD → tanh
+- Menambah hidden layer dari 1 → 2
+- jumlah neuron tetap
+- Mengubah fungsi aktivasi menjadi tanh
+- Menambahkan dropout 0.3
+- Menyesuaikan batch size menjadi 128
+- Epochs menjadi 10
 
 **Hipotesis:**
+Terbukti: Waktu komputasi memang lebih lama (82.9 detik) dan model menjadi terlalu kompleks sehingga menyebabkan gap akurasi yang lebar (overfitting).
 
 **Hasil:**
+Test accuracy: 86.29%
+Train accuracy: 86.20%
+Validation accuracy: 87.38%
+Train time: 26.3 detik
+Model baru ini TIDAK Overfit dan TIDAK Underfit, melainkan berada di kondisi Good Fit (Ideal).
 
 **Observasi:**
+Meskipun akurasi train-nya turun dari 95% ke 86%, akurasi pengujian (test accuracy) stabil di angka 86.29% (hanya selisih sekitar 1.15% dari Eksperimen #2 yang overfit).
 
 ---
 
