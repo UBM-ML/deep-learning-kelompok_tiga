@@ -146,6 +146,7 @@ Model menunjukkan performa validasi dan test yang cukup baik, namun train accura
 ### Eksperimen #5
 
 **Apa yang diubah:**
+
   Hidden layers     : 5
   Neurons per layer : 512
   Activation        : selu
@@ -156,15 +157,18 @@ Model menunjukkan performa validasi dan test yang cukup baik, namun train accura
   Epochs            : 50
   
 **Hipotesis:**
+
 Penambahan kompleksitas arsitektur jaringan (jumlah layer dan neuron), penggunaan optimizer RMSprop, serta aktivasi SELU diperkirakan dapat meningkatkan kemampuan model dalam mengenali pola data sehingga akurasi model meningkat.
 
 **Hasil:**
+
 TEST ACCURACY  : 10.00%
    Test loss      : 541.2349
    Train accuracy : 10.02%
    Val accuracy   : 10.03%
    
 **Observasi:**
+
 Akurasi train rendah — kemungkinan UNDERFITTING.
 Coba: tambah neuron/layer, naikkan learning rate, atau tambah epoch.
 
