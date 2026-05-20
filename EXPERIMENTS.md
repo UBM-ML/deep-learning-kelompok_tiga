@@ -170,6 +170,10 @@ Val accuracy   : 88.52%
 **Observasi:**
 
 ✅ Train-val gap sehat. Lanjut eksperimen!
+-Akurasi training mencapai 90.11% dan akurasi validasi 88.52%, menunjukkan model berhasil mempelajari pola data dengan baik.
+-Selisih antara train accuracy dan validation accuracy relatif kecil, sehingga model memiliki kemampuan generalisasi yang cukup baik dan hanya mengalami sedikit overfitting.
+-Penggunaan optimizer Adam dengan learning rate 0.001 membuat proses pelatihan lebih stabil dibanding konfigurasi sebelumnya.
+-Penyederhanaan arsitektur model serta penggunaan dropout 0.2 membantu meningkatkan performa model secara signifikan hingga test accuracy mencapai 87.98%.
 
 ---
 
