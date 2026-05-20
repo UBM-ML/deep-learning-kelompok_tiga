@@ -29,28 +29,50 @@ Gunakan template di bawah untuk SETIAP eksperimen.
 
 ---
 
-### Eksperimen #1
 
-**Apa yang diubah dari baseline:**
-> Contoh: Mengganti optimizer dari `sgd` → `adam`, sisanya tetap.
+## **Eksperimen #1**
 
-**Hipotesis sebelum run:**
-> Contoh: Adam adalah optimizer adaptif, kami menduga konvergensi akan lebih cepat dan akurasi naik.
+### **Apa yang diubah dari baseline**
 
-**Hasil:**
-- Test accuracy: ___%
-- Train accuracy: ___%
-- Validation accuracy: ___%
-- Train time: ___ detik
-- Apakah overfit/underfit? ___
-
-**Observasi & Insight:**
->
-
-**Rencana eksperimen berikutnya:**
->
+* Mengganti **optimizer dari SGD → Adam**
+* Menambah **hidden layer dari 1 → 2**
+* Menambah **jumlah neuron dari 64 → 128**
+* Mengubah **fungsi aktivasi menjadi tanh**
+* Menambahkan **dropout 0.5**
+* Menyesuaikan **batch size menjadi 512**
+  Baseline lainnya dipertahankan.
 
 ---
+
+### **Hipotesis sebelum run**
+
+Optimizer **Adam** bersifat adaptif terhadap learning rate sehingga diharapkan mampu mencapai konvergensi lebih cepat dibandingkan SGD. Penambahan hidden layer dan jumlah neuron diperkirakan meningkatkan kemampuan model dalam menangkap pola data yang lebih kompleks, sementara dropout 0.5 diharapkan mampu mengurangi overfitting. Dengan kombinasi tersebut, akurasi model diprediksi meningkat dengan generalisasi yang lebih baik.
+
+---
+
+### **Hasil**
+
+* **Train accuracy:** 94%
+* **Validation accuracy:** 90%
+* **Test accuracy:** 91%
+* **Train time:** ±45 detik
+* **Apakah overfit/underfit?**
+  Tidak overfit, terdapat gap kecil antara train dan validation accuracy yang masih wajar.
+
+---
+
+### **Observasi & Insight**
+
+Model menunjukkan peningkatan akurasi dibandingkan baseline dengan proses training yang stabil. Penggunaan Adam mempercepat konvergensi, sementara dropout 0.5 efektif menekan overfitting meskipun sedikit menahan akurasi training. Batch size besar membuat training lebih cepat namun berpotensi melewatkan detail gradien kecil.
+
+---
+
+### **Rencana eksperimen berikutnya**
+
+* Mengurangi **dropout menjadi 0.3** untuk melihat potensi peningkatan akurasi
+* Mencoba **aktivasi ReLU** untuk membandingkan stabilitas dan performa
+* Mengurangi **batch size (128 atau 256)** untuk melihat pengaruh terhadap generalisasi
+
 
 ### Eksperimen #2
 
