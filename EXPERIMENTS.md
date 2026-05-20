@@ -15,7 +15,7 @@ Isi tabel ini setelah selesai semua eksperimen.
 | 0 | 1      | 64      | relu       | sgd       | 0.01   | 32    | 10     | 0.0     | ~85%     | ~30s       |
 | 1 | 2      | 128     | tanh       | adam      | 0.01   | 512   | 10     | 0.5     | 91%      | ~45s       |
 | 2 | 2      | 128     | sigmoid    | adamax    | 0.01   | 128   | 30     | 0.0     | ~87%     | ~82s       |
-| 3 |        |         |            |           |        |       |        |         |          |            |
+| 3 | 4      | 256     | elu        | sgd       | 0.01   | 32    | 10     | 0.3     | ~61%     | ~30s       |
 | 4 |        |         |            |           |        |       |        |         |          |            |
 | 5 |        |         |            |           |        |       |        |         |          |            |
 
@@ -124,7 +124,8 @@ Coba: kurangi neuron, tambah dropout, atau kurangi epoch.
 - Test accuracy: 61.89%
 - Test loss: 9.9008%
 
-**Observasi**:Model menunjukkan performa validasi dan test yang cukup baik, namun train accuracy masih relatif rendah. Learnig rate 0.1 kemungkinan terlalu besar sehingga proses traainning kurang stabil dan menyebabkan loss tinggi .Model belum optimal dan masih dapat ditingkatkan melalui penyesuaian hyperparameter seperti learning rate yang lebih kecil atas penambhan epoch
+**Observasi**:
+Model menunjukkan performa validasi dan test yang cukup baik, namun train accuracy masih relatif rendah. Learnig rate 0.1 kemungkinan terlalu besar sehingga proses traainning kurang stabil dan menyebabkan loss . Model belum optimal dan masih dapat ditingkatkan melalui penyesuaian hyperparameter seperti learning rate yang lebih kecil atas penambhan epoch
 
 ---
 
