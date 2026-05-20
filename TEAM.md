@@ -8,7 +8,7 @@
 
 | Nama Lengkap | NIM | Role | GitHub Username |
 |---|---|---|---|
-| Dionisius Rafael | 32230013 | Humble Servant and Emotional Support |  |
+| Dionisius Rafael | 32230013 | Humble Servant and Emotional Support | LoneWalkersz |
 | Nathasia Oktarina Riyani | 32230025 | Humble Servant and Emotional Support |  |
 | Caryn Caroline | 32230042 | Humble Servant and Emotional Support |  |
 | Nadia Aurelia Clarissa | 32230052 | Humble Servant and Emotional Support | 12elia |
@@ -21,7 +21,7 @@
 ## Pembagian Kerja Singkat
 
 Tuliskan secara jujur kontribusi masing-masing anggota
-  1. Dionisius Rafael — 32230013 — 
+  1. Dionisius Rafael — 32230013 — Eksperiment 5
   2. Nathasia Oktarina Riyani — 32230025 — Eksperiment 5
   3. Caryn Caroline — 32230042 — Eksperimen 2
   4. Nadia Aurelia Clarissa — 32230052 — Refleksi 5
